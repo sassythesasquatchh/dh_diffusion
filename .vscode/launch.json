@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File with Arguments",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "args": [
+        "--model_path",
+        "./save/humanml_trans_enc_512/model000200000.pt",
+        "--edit_mode",
+        "in_between",
+        "--text_condition",
+        "A person throws a ball",
+        "--dataset",
+        "kit"
+      ],
+      "env": { "PYTHONPATH": "${workspaceRoot}" }
+    }
+  ]
+}
